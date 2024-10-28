@@ -55,6 +55,17 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 | Ensemble            | 3613358.500  | 0.000   |
 | Ensemble2           | 3613823.500  | 0.000   |
 
+## Average Classification Time for 10,000 Reviews (CPU only, ~3.0GHz, ~14GB RAM)
+
+| Model               | Average Time (minutes) |
+|---------------------|------------------------|
+| TextBlob            | 0.04                   |
+| VADER               | 0.04                   |
+| DistilBERT          | 11 - 20.76             |
+| MultilingualBERT    | 26.37                  |
+| Ensemble            | 0.04                   |
+| Ensemble2           | 0.04                   |
+
 ## Summary of Model Performance
 
 | Model                  | Accuracy       | Average Proximity | Remarks                                                              |
