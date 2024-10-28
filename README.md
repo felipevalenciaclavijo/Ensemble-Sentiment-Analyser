@@ -12,8 +12,6 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 
 ## Descriptive Statistics
 
-## Descriptive Statistics
-
 | Metric                      | Count     | Mean    | Standard Deviation | Minimum | 25th Percentile | 50th Percentile | 75th Percentile | Maximum |
 |-----------------------------|-----------|---------|---------------------|---------|------------------|------------------|------------------|---------|
 | **reviews.rating**          | 9999.000  | 3.982   | 1.175               | 1.000   | 3.000            | 4.000            | 5.000            | 5.000   |
