@@ -119,7 +119,7 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 |------------------------|-------------------|------------------------------|----------------|-------------------------|-------------------|-------------------------------------------|
 | **TextBlob**           | 3.71              | Moderate                     | 32.65%         | 0.04 minutes            | 0.8096            | High-speed analysis, low variability      |
 | **VADER**              | 4.35              | High                         | 48.17%         | 0.04 minutes            | 0.7452            | Quick analysis, positive sentiment detection |
-| **DistilBERT (67M million parameters)**         | 4.15              | Moderate                     | 47.26%         | 11-20.76 minutes        | 0.7206            | Complex language understanding            |
+| **DistilBERT (67M parameters)**         | 4.15              | Moderate                     | 47.26%         | 11-20.76 minutes        | 0.7206            | Complex language understanding            |
 | **MultilingualBERT (110-125M parameters)**   | 3.75             | Very High                    | 53.71%         | 26.37 minutes           | 0.5992            | High accuracy, detailed sentiment         |
 | **Ensemble**           | 4.29              | High                         | 48.79%         | 0.04 minutes            | 0.6782            | Balanced, fast sentiment overview         |
 | **Ensemble2**          | 4.29              | High                         | 48.80%         | 0.04 minutes            | 0.6779            | Balanced, fast sentiment overview         |
