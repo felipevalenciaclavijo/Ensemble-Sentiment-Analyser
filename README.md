@@ -55,27 +55,18 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 | Ensemble            | 3613358.500  | 0.000   |
 | Ensemble2           | 3613823.500  | 0.000   |
 
-## Accuracy Results
+## Summary of Model Performance
 
-| Model               | Accuracy  | Percentage |
-|---------------------|-----------|------------|
-| TextBlob            | 0.3265    | 32.65%     |
-| VADER               | 0.4817    | 48.17%     |
-| DistilBERT          | 0.4726    | 47.26%     |
-| MultilingualBERT    | 0.5371    | 53.71%     |
-| Ensemble            | 0.4879    | 48.79%     |
-| Ensemble2           | 0.4880    | 48.80%     |
+| Model                  | Accuracy       | Average Proximity | Remarks                                                              |
+|------------------------|----------------|-------------------|----------------------------------------------------------------------|
+| **TextBlob**           | 32.65%         | 0.8096            | Lower accuracy; higher average proximity indicates larger differences. |
+| **VADER**              | 48.17%         | 0.7452            | Moderate accuracy; average proximity is better than TextBlob.        |
+| **DistilBERT**         | 47.26%         | 0.7206            | Similar accuracy to VADER; closer proximity suggests better predictions. |
+| **MultilingualBERT**   | 53.71%         | 0.5992            | Highest accuracy and best average proximity; most reliable model.    |
+| **Ensemble**           | 48.79%         | 0.6782            | Improved accuracy over individual models; average proximity shows potential. |
+| **Ensemble2**          | 48.80%         | 0.6779            | Slightly better than Ensemble; consistently good proximity.          |
 
-## Average Proximity Results
-
-| Model               | Average Proximity |
-|---------------------|-------------------|
-| TextBlob            | 0.8096            |
-| VADER               | 0.7452            |
-| DistilBERT          | 0.7206            |
-| MultilingualBERT    | 0.5992            |
-| Ensemble            | 0.6782            |
-| Ensemble2           | 0.6779            |
+*Note: In the Average Proximity results, smaller values indicate that the average difference between actual and predicted ratings is closer to the true ratings, which is desirable for accurate sentiment analysis.*
 
 
 ## Descriptive Comparison with reviews.rating
@@ -113,14 +104,16 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 
 ## Overall Best Outcomes:
 
-| Model               | Average Sentiment | Alignment with Actual Rating | Accuracy | Speed (10,000 reviews) | Recommended Use Case                      |
-|---------------------|-------------------|------------------------------|----------|-------------------------|-------------------------------------------|
-| **TextBlob**        | 3.71              | Moderate                     | 32.65%   | 0.04 minutes            | High-speed analysis, low variability      |
-| **VADER**           | 4.35              | High                         | 48.17%   | 0.04 minutes            | Quick analysis, positive sentiment detection |
-| **DistilBERT**      | 4.15              | Moderate                     | 47.26%   | 11-20.76 minutes        | Complex language understanding            |
-| **MultilingualBERT** | 3.75             | Very High                    | 53.71%   | 26.37 minutes           | High accuracy, detailed sentiment         |
-| **Ensemble**        | 4.29              | High                         | 48.79%   | 0.04 minutes            | Balanced, fast sentiment overview         |
-| **Ensemble2**       | 4.29              | High                         | 48.80%   | 0.04 minutes            | Balanced, fast sentiment overview         |
+| Model                  | Average Sentiment | Alignment with Actual Rating | Accuracy       | Speed (10,000 reviews) | Average Proximity | Recommended Use Case                      |
+|------------------------|-------------------|------------------------------|----------------|-------------------------|-------------------|-------------------------------------------|
+| **TextBlob**           | 3.71              | Moderate                     | 32.65%         | 0.04 minutes            | 0.8096            | High-speed analysis, low variability      |
+| **VADER**              | 4.35              | High                         | 48.17%         | 0.04 minutes            | 0.7452            | Quick analysis, positive sentiment detection |
+| **DistilBERT**         | 4.15              | Moderate                     | 47.26%         | 11-20.76 minutes        | 0.7206            | Complex language understanding            |
+| **MultilingualBERT**   | 3.75             | Very High                    | 53.71%         | 26.37 minutes           | 0.5992            | High accuracy, detailed sentiment         |
+| **Ensemble**           | 4.29              | High                         | 48.79%         | 0.04 minutes            | 0.6782            | Balanced, fast sentiment overview         |
+| **Ensemble2**          | 4.29              | High                         | 48.80%         | 0.04 minutes            | 0.6779            | Balanced, fast sentiment overview         |
+
+*Note: In the Average Proximity results, smaller values indicate that the average difference between actual and predicted ratings is closer to the true ratings, which is desirable for accurate sentiment analysis.*
 
 
 - **Best for Accuracy:** MultilingualBERT (53.71%)
