@@ -12,16 +12,15 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 
 ## Descriptive Statistics
 
-| Metric                      | Count     | Mean    | Standard Deviation | Minimum | 25th Percentile | 50th Percentile | 75th Percentile | Maximum |
-|-----------------------------|-----------|---------|---------------------|---------|------------------|------------------|------------------|---------|
-| **reviews.rating**          | 9999.000  | 3.982   | 1.175               | 1.000   | 3.000            | 4.000            | 5.000            | 5.000   |
-| **vader.sentiment**         | 9999.000  | 4.347   | 1.190               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
-| **textblob.sentiment**      | 9999.000  | 3.711   | 0.659               | 1.000   | 3.000            | 4.000            | 4.000            | 5.000   |
-| **distilbert.sentiment**    | 9999.000  | 4.147   | 1.336               | 2.000   | 2.000            | 5.000            | 5.000            | 5.000   |
-| **multilingual.sentiment**   | 9999.000  | 3.747   | 1.284               | 1.000   | 3.000            | 4.000            | 5.000            | 5.000   |
-| **ensemble_prediction**      | 9999.000  | 4.289   | 1.054               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
-| **ensemble_prediction2**     | 9999.000  | 4.289   | 1.055               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
-
+| Metric                      | Count     | Mean    | Standard Deviation |
+|-----------------------------|-----------|---------|---------------------|
+| **reviews.rating**          | 9999.000  | 3.982   | 1.175               |
+| **vader.sentiment**         | 9999.000  | 4.347   | 1.190               |
+| **textblob.sentiment**      | 9999.000  | 3.711   | 0.659               |
+| **distilbert.sentiment**    | 9999.000  | 4.147   | 1.336               |
+| **multilingual.sentiment**   | 9999.000  | 3.747   | 1.284               |
+| **ensemble_prediction**      | 9999.000  | 4.289   | 1.054               |
+| **ensemble_prediction2**     | 9999.000  | 4.289   | 1.055               |
 
 ## Shapiro-Wilk Test for Normality
 
