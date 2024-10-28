@@ -12,16 +12,18 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 
 ## Descriptive Statistics
 
-| Metric                | reviews.rating | vader.sentiment | textblob.sentiment | distilbert.sentiment | multilingual.sentiment | ensemble_prediction | ensemble_prediction2 |
-|-----------------------|----------------|------------------|---------------------|-----------------------|------------------------|---------------------|-----------------------|
-| Count                 | 9999.000       | 9999.000        | 9999.000           | 9999.000             | 9999.000              | 9999.000           | 9999.000              |
-| Mean                  | 3.982          | 4.347           | 3.711              | 4.147                | 3.747                 | 4.289              | 4.289                 |
-| Standard Deviation    | 1.175          | 1.190           | 0.659              | 1.336                | 1.284                 | 1.054              | 1.055                 |
-| Minimum               | 1.000          | 1.000           | 1.000              | 2.000                | 1.000                 | 1.000              | 1.000                 |
-| 25th Percentile       | 3.000          | 4.000           | 3.000              | 2.000                | 3.000                 | 4.000              | 4.000                 |
-| 50th Percentile       | 4.000          | 5.000           | 4.000              | 5.000                | 4.000                 | 5.000              | 5.000                 |
-| 75th Percentile       | 5.000          | 5.000           | 4.000              | 5.000                | 5.000                 | 5.000              | 5.000                 |
-| Maximum               | 5.000          | 5.000           | 5.000              | 5.000                | 5.000                 | 5.000              | 5.000                 |
+## Descriptive Statistics
+
+| Metric                      | Count     | Mean    | Standard Deviation | Minimum | 25th Percentile | 50th Percentile | 75th Percentile | Maximum |
+|-----------------------------|-----------|---------|---------------------|---------|------------------|------------------|------------------|---------|
+| **reviews.rating**          | 9999.000  | 3.982   | 1.175               | 1.000   | 3.000            | 4.000            | 5.000            | 5.000   |
+| **vader.sentiment**         | 9999.000  | 4.347   | 1.190               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
+| **textblob.sentiment**      | 9999.000  | 3.711   | 0.659               | 1.000   | 3.000            | 4.000            | 4.000            | 5.000   |
+| **distilbert.sentiment**    | 9999.000  | 4.147   | 1.336               | 2.000   | 2.000            | 5.000            | 5.000            | 5.000   |
+| **multilingual.sentiment**   | 9999.000  | 3.747   | 1.284               | 1.000   | 3.000            | 4.000            | 5.000            | 5.000   |
+| **ensemble_prediction**      | 9999.000  | 4.289   | 1.054               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
+| **ensemble_prediction2**     | 9999.000  | 4.289   | 1.055               | 1.000   | 4.000            | 5.000            | 5.000            | 5.000   |
+
 
 ## Shapiro-Wilk Test for Normality
 
