@@ -116,7 +116,7 @@ In evaluating these models, we’ve considered both sentiment accuracy and opera
 *Note: In the Average Proximity results, smaller values indicate that the average difference between actual and predicted ratings is closer to the true ratings, which is desirable for accurate sentiment analysis.*
 
 
-- **Best for Accuracy:** MultilingualBERT (53.71%)
+- **Best for Accuracy and Proximity:** MultilingualBERT (53.71%)
 - **Best for Speed:** TextBlob, VADER, and Ensemble Models (0.04 minutes)
 - **Best Balance:** Ensemble models provide a good mix of speed and accuracy for large-scale sentiment analysis.
 
